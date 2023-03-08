@@ -62,8 +62,26 @@ public class Car {
     return enginePower;
   }
 
+  // нельзя написать this - метод статичный и ничего не знает про конкретный объект
+  public static void setMinimalAge(int minimalAge){
+    Car.minimalAge = minimalAge;
+  }
 
+  public void setDriverAge(int age) {
+    if(age < minimalAge){
+      System.out.println("Возраст " + age + " недостаточен для управлеения автомобилем.");
+      return;
+    }
+    driverAge = age;
+  }
 
+  public  int getDriverAge() {
+   return driverAge;
+  }
+
+  public static int getMinimalAge() {
+    return minimalAge;
+  }
 
 
 
