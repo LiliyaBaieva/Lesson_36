@@ -33,6 +33,24 @@ public class Car {
     this.plate = plate;
   }
 
+  public void setModel(String model){
+    this.model = model;
+  }
+
+  public String getModel(){
+    return model;
+  }
+
+  public String getPlate(){
+    return plate;
+  }
+
+  public Double getEnginePower(){
+    return enginePower;
+  }
+
+
+
 
 
 
