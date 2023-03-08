@@ -29,6 +29,10 @@ public class Car {
     return String.format("%s: %s, (%f)", model, plate, enginePower);
   }
 
+  public void setPlate(String plate){
+    this.plate = plate;
+  }
+
 
 
 
